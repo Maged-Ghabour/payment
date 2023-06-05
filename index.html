@@ -42,7 +42,7 @@
     <section class="mt-5">
     <div class="row">
                <div class="mb-3">
-                   <label for="quota" class="form-label w-100 text-start">الباقة</label>
+                   <label for="quota" class="form-label w-100 text-start"> <span class="badge text-bg-secondary"> الباقة الي عليها العميل</span></label>
                     <select class="form-select" aria-label="Default select example" dir="rtl" id="price">
                         <option value="" selected disabled>اختار الباقة الي عليها العميل</option>
                         <option value="120">140</option>
@@ -53,7 +53,7 @@
                     </select>
                </div>
                  <div class="mb-3">
-                   <label for="quota" class="form-label w-100 text-start" dir="rtl"> المبلغ الموجود علي ال BSS </label>
+                   <label for="quota" class="form-label w-100 text-start" dir="rtl"><span class="badge text-bg-secondary">المبلغ المتواجد مع العميل علي ال BSS </span></label>
                     <input type="text" name="priceBss" id="priceBss" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1')">
                </div>
                <div class="output my-5">
