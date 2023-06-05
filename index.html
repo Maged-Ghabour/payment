@@ -54,7 +54,7 @@
                </div>
                  <div class="mb-3">
                    <label for="quota" class="form-label w-100 text-start" dir="rtl"> المبلغ الموجود علي ال BSS </label>
-                    <input type="text" name="priceBss" id="priceBss" class="form-control">
+                    <input type="text" name="priceBss" id="priceBss" class="form-control" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1')">
                </div>
                <div class="output my-5">
 
@@ -64,24 +64,25 @@
                         <table class="table m-0" dir="rtl">
                             <body>
                                     <tr>
-                                        <th scope="col" class="bg-dark text-white rounded fw-bold">سعر الباقة <span class="badge bg-primary p-1 rounded"> شامل الضريبة</span></th>
+                                        <th scope="col" class="bg-dark text-white rounded fw-bold">سعر الباقة <span class="badge bg-primary p-1 rounded"> بدون الضريبة</span></th>
                                         <td scope="col" id="quota" class="bg-success text-white text-center rounded fw-bold"></td>
                                     </tr>
                                     <tr>
-                                        <th scope="col" class="bg-dark text-white  rounded fw-bold">سعر الباقة <span class="badge bg-primary p-1 rounded"> بدون الضريبة</span></th>
+                                        <th scope="col" class="bg-dark text-white  rounded fw-bold">سعر الباقة <span class="badge bg-primary p-1 rounded"> شامل الضريبة</span></th>
                                         <td scope="col" id="quota1" class="bg-success text-white text-center rounded fw-bold"></td>
                                     </tr>
-                                            <tr>
-                                        <th scope="col" class="bg-dark text-white  rounded fw-bold"> المبلغ المتبقي  <span class="badge bg-danger p-1 rounded">شامل الضريبة</span></th>
-                                        <td scope="col" id="vat" class="bg-success text-white text-center rounded fw-bold">
-                                        </td>
-                                    </tr>
-                                    <tr>
+                                      <tr>
                                         <th scope="col" class="bg-dark text-white  rounded fw-bold"> المبلغ المتبقي <span class="badge bg-danger p-1 rounded"> بدون الضريبة</span></th>
                                         <td scope="col" id="net" class="bg-success text-white text-center rounded fw-bold">
                                         </td>
                                     </tr>
                               
+                                    <tr>
+                                        <th scope="col" class="bg-dark text-white  rounded fw-bold"> المبلغ المتبقي  <span class="badge bg-danger p-1 rounded">شامل الضريبة</span></th>
+                                        <td scope="col" id="vat" class="bg-success text-white text-center rounded fw-bold">
+                                        </td>
+                                    </tr>
+                                  
                              
                             </body>
                         </table>

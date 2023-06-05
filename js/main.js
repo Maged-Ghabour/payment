@@ -53,7 +53,7 @@ function calcNet() {
          net.innerHTML = `<span>ايوة فين المشكلة؟</span> <img class="" src="imgs/cursing.png" alt="" width="35px" height="35px" class="text-center h-100">`
          vat.innerHTML = `<span>ايوة فين المشكلة؟</span> <img class="" src="imgs/cursing.png" alt="" width="35px" height="35px" class="text-center h-100">`
         } else {
-            net.innerHTML = Number(price.value) - Number(priceBss.value) + " جنية"; 
+            net.innerHTML = (Number(price.value) - Number(priceBss.value)).toFixed(2) + " جنية"; 
             vat.innerHTML = calcVAT() + " جنية"
         }
 
