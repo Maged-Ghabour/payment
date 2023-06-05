@@ -1,0 +1,97 @@
+<!DOCTYPE html >
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Satisfaction</title>
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="imgs/2.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body >
+    
+<nav class="navbar bg-dark" data-bs-theme="dark">
+  <div class="container">
+     <div class="dropdown">
+        
+            <a class="navbar-brand dropdown-toggle " href="#" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="imgs/2.png" alt="Bootstrap" width="50" height="50">
+            </a>        
+   
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="https://maged-ghabour.github.io/Quota/">باقي كام جيجا ؟ 🤔</a></li>
+            <li><a class="dropdown-item" href="https://maged-ghabour.github.io/Routers/">كندات الرواتر 👋</a></li>
+            <li><a class="dropdown-item" href="https://maged-ghabour.github.io/satisfaction/">حساب عروض الالغاء 🥲</a></li>
+        </ul>
+        </div>
+    <h1 class="text-white">  <img src="imgs/money.png" alt="" width="35px" height="35px"> ادفع كام ؟ </h1>
+  </div>
+</nav>
+
+
+<div class="container" dir="rtl">
+
+<div id="idea" class="position-absolute pointer" style="top: 13%;left: 10%; cursor: pointer;">
+      <img src="imgs/idea.png" alt="" width="35px" height="35px"title="هوه البتاع ده لزمته ايه ؟ اضغط عليا وانت تعرف" >
+</div>
+
+    <section class="mt-5">
+    <div class="row">
+               <div class="mb-3">
+                   <label for="quota" class="form-label w-100 text-start">الباقة</label>
+                    <select class="form-select" aria-label="Default select example" dir="rtl" id="price">
+                        <option value="" selected disabled>اختار الباقة الي عليها العميل</option>
+                        <option value="120">140</option>
+                        <option value="170">200</option>
+                        <option value="210">250</option>
+                        <option value="340">400</option>
+                        <option value="500">600</option>
+                    </select>
+               </div>
+                 <div class="mb-3">
+                   <label for="quota" class="form-label w-100 text-start" dir="rtl"> المبلغ الموجود علي ال BSS </label>
+                    <input type="text" name="priceBss" id="priceBss" class="form-control">
+               </div>
+               <div class="output my-5">
+
+              
+
+                <div class="table-responsive">
+                        <table class="table m-0" dir="rtl">
+                            <body>
+                                    <tr>
+                                        <th scope="col" class="bg-dark text-white rounded fw-bold">سعر الباقة <span class="badge bg-primary p-1 rounded"> شامل الضريبة</span></th>
+                                        <td scope="col" id="quota" class="bg-success text-white text-center rounded fw-bold"></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col" class="bg-dark text-white  rounded fw-bold">سعر الباقة <span class="badge bg-primary p-1 rounded"> بدون الضريبة</span></th>
+                                        <td scope="col" id="quota1" class="bg-success text-white text-center rounded fw-bold"></td>
+                                    </tr>
+                                            <tr>
+                                        <th scope="col" class="bg-dark text-white  rounded fw-bold"> المبلغ المتبقي  <span class="badge bg-danger p-1 rounded">شامل الضريبة</span></th>
+                                        <td scope="col" id="vat" class="bg-success text-white text-center rounded fw-bold">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col" class="bg-dark text-white  rounded fw-bold"> المبلغ المتبقي <span class="badge bg-danger p-1 rounded"> بدون الضريبة</span></th>
+                                        <td scope="col" id="net" class="bg-success text-white text-center rounded fw-bold">
+                                        </td>
+                                    </tr>
+                              
+                             
+                            </body>
+                        </table>
+                    </div>
+               </div>
+             
+    </div>
+</section>
+</div>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
