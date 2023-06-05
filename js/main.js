@@ -49,9 +49,9 @@ priceBss.addEventListener("input", calcNet)
 function calcNet() {
     if (Number(priceBss.value) != "" && Number(price.value) != "") {
 
-        if (Number(price.value) - Number(priceBss.value) < 0) {
-         net.innerHTML = `<span>ايوة فين المشكلة؟</span> <img class="" src="imgs/cursing.png" alt="" width="35px" height="35px" class="text-center h-100">`
-         vat.innerHTML = `<span>ايوة فين المشكلة؟</span> <img class="" src="imgs/cursing.png" alt="" width="35px" height="35px" class="text-center h-100">`
+        if (Number(price.value) - Number(priceBss.value) <= 0) {
+         net.innerHTML = `<span class='fs-6'>  لا يوجد  </span> <img class="" src="imgs/cursing.png" alt="" width="35px" height="35px" class="text-center h-100">`
+         vat.innerHTML = `<span class='fs-6'>   لا يوجد  </span> <img class="" src="imgs/cursing.png" alt="" width="35px" height="35px" class="text-center h-100">`
         } else {
             net.innerHTML = (Number(price.value) - Number(priceBss.value)).toFixed(2) + " جنية"; 
             vat.innerHTML = calcVAT() + " جنية"
